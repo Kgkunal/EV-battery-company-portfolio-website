@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Nav-bar-styling */
+.max-width{
+    max-width: 1300px;
+    padding: 0% 80px;
+    margin: auto;
+}
+.navbar{
+    
+    position: fixed;
+    padding: 25px 0;
+    width: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+}
+.navbar.sticky{
+    padding: 15px 0;
+    background-color: blue;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar > .max-width > .logo a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+    
+}
+.navbar > .max-width > .logo a span{
+    color:greenyellow;
+}
+.navbar.sticky .logo a span{
+    color: #fff;
+}
+.navbar > .max-width > ul li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar > .max-width > ul li a{
+    color: #fff;
+    font-size: 18px;
+    margin-left: 25px;
+    font-weight:500;
+}
+.navbar > .max-width > ul li a:hover{
+    color:greenyellow;
+}
+                /* MENU-BTN-STYLING */
+.menu-btn{
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}               
+
+
+/* HOME-SECTION-STYLING */
+.home{
+    display: flex;
+    background-image: url("Images/WALLPAPER.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.home > .max-width{
+    margin: auto 0 auto 40px;
+}
+.home >.max-width > .home-content >.text-1{
+    font-size: 27px;
+}
+.home >.max-width > .home-content >.text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home >.max-width > .home-content >.text-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+.home >.max-width > .home-content >.text-3 span{
+    color:greenyellow;
+}
+.home .home-content a{
+    display: inline-block;
+    color: #fff;;
+    background-color:blue;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 2px solid blue;
+}
+.home .home-content a:hover{
+    color: blue;
+    background:none;
+}
+
+/* RESPONSIVE-MEDIA-QUERY-HERE */
+/* @media (max-width:947px){
+    .max-width{
+         padding: 0 50px;  
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display:inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+} */
+
+                      /* advantages-STYLING */
+.advantages{
+    margin-top: 25px;
+}                     
+.advantages img{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+    height: 65vh;
+}
+.adv-heading{
+    align-self: center;
+}
+.advantages > .row > h1{
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 45px;
+    
+}
+
+/* Product-section-styling */
+img{
+    width:100%;
+    height: 50%;
+}
+.title{
+    color: #111;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: greenyellow;
+    padding: 7px;
+}
+.slidebar-section{
+    
+    text-align: center;
+    background:url(/Images/blur\ backkkk.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    margin-top: 15px;
+    padding-top: 15px;
+    margin-bottom: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    
+}
+.slidebar{
+    display: flex;
+    
+    padding:15px;
+    
+}
+.slidebar-title{
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+    
+}
+.card{
+    
+    text-align: center;
+    width: 100%;
+    margin:5px;
+    padding: 15px;
+    height:300px;
+    background-color:#fff;
+}
+.product-name{
+    margin:10px 0;
+}
+.buy-btn{
+ border: none;
+ color: #fff;
+ background-image: linear-gradient(30deg, #0400ff, #4ce3f7);
+ border-radius: 20px;
+ background-size: 100% auto;
+ font-family: inherit;
+ font-size: 17px;
+ padding: 0.6em 1.5em;
+ margin-top: 10px;
+}
+.buy-btn:hover{
+    background-color: #00ff7f;
+}
+                        /* ABOUT-SECTION-STYLING */
+.about-section{
+    display: flex;
+    width: 100%;
+    padding: 3rem 0;
+    justify-content: center;
+    background-color:#00ff7f;
+    background-image: url(Images/bb-back.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 85vh;
+}
+.about-img{
+    width: 250px;
+    height:250px;
+    margin: 0 3rem;
+}
+.about-img img{
+    width: 100%;
+    height: 100%;
+}
+.about-text{
+    color: #111;
+    width: 400px;
+    height: 250px;
+    border-left: 3px solid blue;
+    padding-left: 2rem;
+    margin: 0 3rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+.about-text p{
+    margin-top: 1.5rem;
+    font-size: 15px;
+    opacity: .7;
+}
+.about-text h2{
+    font-size: 40px;
+}
+
+
+    /* RESPONSIVE-LAYOUT-STYLING-FOR-ABOUT-SECTION */
+
+@media only screen and (max-width:900px){
+    .about-section{
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-img{
+        width: 80%;
+    }
+    .about-text{
+        width: 100px;
+        height: 100%;
+        border-top: 3px solid blue;
+        border-left: none;
+        padding: 1rem;
+        margin-top: 2rem;
+    }
+    .about-text h3,p{
+        width: 80%;
+    }
+    .about-text p{
+        font-size: 12px;
+    }
+}
+
+                         /* contact-us-styling */
+.contact-section{
+    background: url(Images/bg-contact.png);
+    padding: 40px 0;
+    background-size: cover;
+}
+.contact-section h1{
+    text-align: center;
+    color: #ddd;
+    font-size: 40px;
+}
+.contact-form{
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+}
+.form-text{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 0;
+    background: #111;
+    padding: 20px 40px;
+    outline: none;
+    color:#ddd;
+    transition: 0.5s;
+}
+.form-text:hover{
+    box-shadow: 0 0 5px 2px greenyellow;
+}
+textarea.form-text{
+    resize: none;
+}
+.form-btn{
+    float: right;
+    border: 0;
+    color:#ddd;
+    background: #0400ff;
+    padding: 12px 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.form-btn:hover{
+    background-color: #ddd;
+    border: 2px solid blue;
+    color: black;
+}
+                 /* FOOTER-STYLING */
+footer{
+    background:black;
+    
+    width: 100%;
+    font-family: 'ubuntu', sans-serif;
+    padding-top: 40px;
+    color: #fff;
+} 
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}    
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+} 
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.social{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1rem 0 2rem 0;
+}
+.social li{
+    margin: 0 10px;
+}
+.social a{
+    text-decoration: none;
+    color: #fff;
+
+}
+.social a{
+    font-size: 1.1rem;
+    color: red;
+}
+
+
+#msg{
+    height: 100px;
+}
+.footer-bottom{
+    text-align: center;
+    padding-bottom: 5px;
+    margin-top: 5px;
+}
